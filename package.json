@@ -1,0 +1,28 @@
+{
+  "name": "startnow-node200-ejs-portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Austin-Gray/startnow-node200-ejs-portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Austin Gray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Austin-Gray/startnow-node200-ejs-portfolio/issues"
+  },
+  "homepage": "https://github.com/Austin-Gray/startnow-node200-ejs-portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.1"
+  }
+}
