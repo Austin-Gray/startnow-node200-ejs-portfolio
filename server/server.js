@@ -1,14 +1,15 @@
 const express    = require('express');
 const morgan     = require('morgan');
 const bodyParser = require('body-parser');
-const projects   = require('./projects');
+const portfolio   = require('./portfolio');
 
 const app = express();
 
+app.use(express.static('public'))
 app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use('/projects', projects)
+app.use('/portfolio', portfolio)
 
 app.set('views', './views');
 
@@ -24,7 +25,7 @@ app.get('/contact', (req, res) =>  {
 
 app.post('/thanks', (req, res) => {
     res.render('thanks', { contact: req.body })
-  });
+});
 
 app.listen(8080, () => {
     console.log('listening at http://localhost:8080');

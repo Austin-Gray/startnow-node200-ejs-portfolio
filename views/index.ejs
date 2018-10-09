@@ -1,9 +1,51 @@
 <html>
   <head>
-    <title>Austin's Portfolio</title>
+    <title>Austin Gray</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 40px;
+        }
+
+        .heading {
+            margin-top: 30px;
+            margin-bottom: 15%;
+        }
+
+        #photo {
+            width: 200px;
+            height: 200px;
+            background-image: url('AustinHeadshot.png');
+            background-size: cover;
+            display: block;
+            border-radius: 100px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+        }
+    </style>
   </head>
   <body>
-    <div>
+    <div class='container text-center text-dark'>
+        <div class="heading row justify-content-center">
+            <h3 class="col">Austin Gray</h3>
+        </div>
+        <div class="row m-3 justify-content-center">
+            <div id='photo'>
+            </div>
+        </div>
+        <div class="row m-3 justify-content-center">
+            <div id='about'>
+                <p>Hi, my name is Austin.</p>
+            </div>
+        </div>
+        <div class="row m-3 justify-content-center">
+            <button onclick="location.href='http://localhost:8080/contact'">Contact me</button>
+        </div>
     </div>
   </body>
 </html>
