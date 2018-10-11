@@ -8,13 +8,27 @@
             width: 100%;
         }
 
+        .btn {
+            display: inline-block;
+            border: 1px solid #262626;
+            color: #262626;
+            border-radius: 40px;
+            font-size: 15px;
+            width: 150px;
+        }
+
         h3 {
             font-size: 40px;
         }
 
         .heading {
             margin-top: 30px;
-            margin-bottom: 12%;
+            margin-bottom: 80px;
+        }
+
+        hr {
+            border-color: #999999;
+            width: 100px;
         }
 
         #photo {
@@ -31,7 +45,7 @@
   </head>
   <body>
     <div class='container text-center text-dark'>
-        <div class="heading row justify-content-center">
+        <div class="heading row">
             <h3 class="col">Austin Gray</h3>
         </div>
         <div class="row m-3 justify-content-center">
@@ -39,12 +53,20 @@
             </div>
         </div>
         <div class="row m-3 justify-content-center">
-            <div id='about'>
-                <p>Hi, my name is Austin.</p>
+            <div id='about' class='col-12'>
+                <p>Thinker, coder, writer of syntactic sugar.</p>
+                <p></p>
+            </div>
+            <div>
+                <hr>
             </div>
         </div>
+        </div>
         <div class="row m-3 justify-content-center">
-            <button onclick="location.href='http://localhost:8080/contact'">Contact me</button>
+            <a class="btn" href='http://localhost:8080/portfolio'>View my work</a>
+        </div>
+        <div class="row m-3 justify-content-center">
+            <a class="btn" href='http://localhost:8080/contact'>Contact me</a>
         </div>
     </div>
   </body>
