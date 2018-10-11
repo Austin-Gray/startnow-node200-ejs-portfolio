@@ -2,7 +2,7 @@ var express = require('express')
 var router = express.Router()
 
 router.get('/', function (req, res) {
-  res.render('portfolio')
+  res.send('Portfolio root page')
 });
 
 router.get('/sd-topspots', function (req, res) {
