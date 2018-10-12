@@ -4,18 +4,28 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
         body {
-            height: 100%;
-            width: 100%;
+          height: 100%;
+          width: 100%;
         }
 
         h3 {
-            font-size: 40px;
+          font-size: 40px;
+        }
+
+        hr {
+          border-color: #999999;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
         }
 
         .heading {
-            margin-top: 30px;
-            margin-bottom: 80px;
+          margin-top: 30px;
+          margin-bottom: 80px;
         }
+
         @media screen and (max-width: 576px) {}        
     </style>
   </head>
@@ -23,6 +33,36 @@
     <div class='container'>
       <div class="heading row text-center text-dark">
         <h3 class="col">Austin Gray</h3>
+      </div>
+      <div class="row justify-content-center text-dark mb-5">
+        <h4 class="col-8">Recent Projects:</h4>
+      </div>
+      <div class="row justify-content-center">
+        <a target="_blank" href='https://ag-slango.herokuapp.com/' class="col-8 mb-3 text-dark">Slango</a>
+        <div class="col-8 mb-3">
+          <img src="slango.png" alt="slango">
+        </div>
+        <hr class="col-7 mb-4">
+      </div>
+      <div class="row justify-content-center">
+        <a target="_blank" href='https://ag-vstda.herokuapp.com/' class="col-8 mb-3 text-dark">Very Simple To-Do App</a>
+        <div class="col-8 mb-3">
+          <img src="vstda.png" alt="vstda">
+        </div>
+        <hr class="col-7 mb-4">
+      </div>
+      <div class="row justify-content-center">
+        <a target="_blank" href='https://ag-sd-topspots.herokuapp.com/' class="col-8 mb-3 text-dark">San Diego Top Spots</a>
+        <div class="col-8 mb-3">
+          <img src="sd-topspots.png" alt="san diego topspots">
+        </div>
+        <hr class="col-7 mb-4">
+      </div>
+      <div class="row justify-content-center mb-5">
+        <a target="_blank" href='https://ag-change-calculator.herokuapp.com/' class="col-8 mb-3 text-dark">Change Calculator</a>
+        <div class="col-8 mb-3">
+          <img src="change-calculator.png" alt="change calculator">
+        </div>
       </div>
     </div>
   </body>
